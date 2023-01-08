@@ -1,0 +1,314 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+button{
+  outline: none;
+  border: none;
+}
+img{
+  width: 100%;
+  pointer-events: none;
+}
+.logo{
+  /* margin-right: 30px; */
+  width: 10%;
+}
+.Navcontainer{
+  width: 100%;
+  background: white;
+  position: fixed;
+  z-index: 1;
+  padding: 20px 5px 20px 5px;
+  box-shadow: 0px 4px 30px 3px rgba(0, 0, 0, 0.25);
+}
+.Navchild{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navsubchild{
+  display: flex;
+  grid-gap: 25px;
+  margin-left: 10px;
+  /* margin-top: 20px; */
+}
+.navlinkchild{
+  display: flex;
+  margin-top: 10px;
+  grid-gap: 25px;
+
+}
+.inputcontainerlink{
+  display: none;
+}
+.inputcontainerlink input{
+  padding: 5px 5px 5px 5px;
+  border:1px solid #46C3DB;
+  outline: none;
+  border-radius: 5px;
+
+}
+.inputcontainerlink input::placeholder{
+
+  color: #46C3DB;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.inputcontainer input{
+  padding: 5px 5px 5px 5px;
+  border:1px solid #46C3DB;
+  outline: none;
+  border-radius: 5px;
+}
+.inputcontainer input::placeholder{
+  color: #46C3DB;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.homelink{
+  text-decoration: none;
+  color: #46C3DB;
+  font-weight: 700;
+font-size: 15px;
+border-bottom: 3px dashed #46C3DB;
+
+}
+.whylink{
+  text-decoration: none; 
+  color: #000;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.recomendlink{
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.wherelink{
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.aboutlink{
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.phonenmb{
+  color: #46C3DB;
+  font-weight: 700;
+}
+.menuicon{
+  display: none;
+}
+
+/* Herosection */
+.Herobanner{
+  position: relative;
+  width: 100%;
+  top: 70px;
+  padding-top: 15px;
+  background-color: #FFFFFF;
+}
+.heroitemchild{
+  display: flex;
+  align-items: center;
+
+}
+.heroimage{
+  width: 90%;
+}
+.heroh2 h2{
+font-weight: 900;
+font-size: 65px;
+color: rgba(17, 59, 73, 0.9);
+}
+.heroptag{
+  width:83%;
+}
+.heroptag p{
+  font-weight: 600;
+font-size: 18px;
+color: #000000;
+}
+.herobutton{
+  background: #46C3DB;
+border: 1px solid #46C3DB;
+box-shadow: 0px 4px 4px rgba(70, 195, 219, 0.25);
+border-radius: 30px;
+padding: 10px 15px 10px 15px;
+/* font-family: 'Montserrat'; */
+font-weight: 900;
+/* font-size: 8px; */
+color: #FFFFFF;
+}
+.schedulesearch{
+  position: absolute;
+width: 654px;
+height: 52px;
+top: 100px;
+background: #F1F1F1;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+}
+
+
+
+/* Media Query */
+@media (max-width:480px) {
+  .logo{
+    width: 35%;
+  }
+
+
+  .menuicon{
+    display: block;
+    z-index: 2;
+  }
+  .phonenmb{
+    display: none;
+  }
+  .inputcontainerlink{
+    display: block;
+  }
+  .Navchild .navlinkchild{
+    display: block;
+    /* right: 0; */
+   left:0;
+   top: 0px;
+
+    position: fixed;
+    background:white;
+    box-shadow: 4px 3px 3px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 70vh;
+    padding: 20px 50px 5px 50px;
+  }
+  .home{
+    margin-bottom: 50px;
+  }
+  .homelink{
+    font-size: 1.3rem;
+
+  }
+  .wherelink{
+    font-size: 1rem;
+  }
+  .whylink{
+    font-size: 1rem;
+  }
+  .aboutlink{
+    font-size: 1rem;
+  }
+ .expand .navlinkchild{
+    display: none;  
+  }
+  .inputcontainer{
+    display: none;
+  }
+
+  /* Herosection */
+  .Herobanner{
+    padding-top: 50px;
+  }
+  .heroitemchild{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+  }
+  .heroh2 h2{
+    font-size: 40px;
+  }
+  .heroimage{
+ 
+    display: none;
+  }
+  .heroptag{
+
+    width: 100%;
+  }
+}
+
+/* Meduim Screen */
+@media (min-width:480px) and (max-width:995px) {
+  .logo{
+    width: 20%;
+  }
+
+
+  .menuicon{
+    display: block;
+    z-index: 2;
+  }
+  .phonenmb{
+    display: none;
+  }
+  .inputcontainerlink{
+    display: block;
+  }
+  .Navchild .navlinkchild{
+    display: block;
+    /* right: 0; */
+   left:0;
+   top: 0px;
+
+    position: fixed;
+    background:white;
+    box-shadow: 4px 3px 3px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 70vh;
+    padding: 20px 50px 5px 50px;
+  }
+  .home{
+    margin-bottom: 50px;
+  }
+  .homelink{
+    font-size: 1.3rem;
+
+  }
+  .wherelink{
+    font-size: 1rem;
+  }
+  .whylink{
+    font-size: 1rem;
+  }
+  .aboutlink{
+    font-size: 1rem;
+  }
+ .expand .navlinkchild{
+    display: none;  
+  }
+  .inputcontainer{
+    display: none;
+  }
+    /* Herosection */
+    .Herobanner{
+      padding-top: 50px;
+    }
+    .heroitemchild{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    
+    }
+    .heroh2 h2{
+      font-size: 40px;
+    }
+    .heroimage{
+      width: 100%;
+      margin-top: 50px;
+    }
+    .heroptag{
+  
+      width: 100%;
+    }
+}

@@ -14,6 +14,28 @@ img{
   width: 100%;
   pointer-events: none;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
 .logo{
   /* margin-right: 30px; */
   width: 10%;
@@ -115,13 +137,16 @@ border-bottom: 3px dashed #46C3DB;
   position: relative;
   width: 100%;
   top: 70px;
-  padding-top: 15px;
+  /* bottom: 50px; */
+  /* padding-top: 15px; */
+  padding-bottom: 50px;
+  /* margin-bottom: 60px; */
+  /* background-color: red; */
   background-color: #FFFFFF;
 }
 .heroitemchild{
-  display: flex;
-  align-items: center;
-
+display: flex;
+align-items: center;
 }
 .heroimage{
   width: 90%;
@@ -150,15 +175,51 @@ font-weight: 900;
 /* font-size: 8px; */
 color: #FFFFFF;
 }
+
+.schedulecont{
+  display: flex;
+  justify-content: center;
+}
 .schedulesearch{
-  position: absolute;
-width: 654px;
+width: 70%;
+display: flex;
+align-items: center;
+justify-content: space-between;
 height: 52px;
-top: 100px;
+padding: 40px 5px 40px 5px;
 background: #F1F1F1;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 5px;
 }
+.angledown{
+  margin-left: 20px;
+}
+
+.searchdtl{
+  font-weight: 900;
+font-size: 15px;
+color: #000000;
+margin-left: 10px;
+}
+.pickup{
+  margin-left: 20px;
+
+}
+.location{
+  display: flex;
+  align-items: center;
+}
+.searchbutton button{
+  padding:20px 40px 25px 40px;
+   background:#113B49;
+border:1px solid #113B49;
+ border-radius: 0px 5px 5px 0px;
+ width: 100%;
+ font-weight: 700;
+font-size: 15px;
+color: #FFFFFF;
+}
+
 
 
 
@@ -219,12 +280,7 @@ border-radius: 5px;
   .Herobanner{
     padding-top: 50px;
   }
-  .heroitemchild{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  
-  }
+
   .heroh2 h2{
     font-size: 40px;
   }
@@ -235,6 +291,9 @@ border-radius: 5px;
   .heroptag{
 
     width: 100%;
+  }
+  .schedulesearch{
+    display: none;
   }
 }
 
@@ -301,7 +360,7 @@ border-radius: 5px;
     
     }
     .heroh2 h2{
-      font-size: 40px;
+      font-size: 70px;
     }
     .heroimage{
       width: 100%;
@@ -310,5 +369,8 @@ border-radius: 5px;
     .heroptag{
   
       width: 100%;
+    }
+    .schedulesearch{
+      display: none;
     }
 }
